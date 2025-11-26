@@ -1,10 +1,10 @@
 package main
 
 import (
-	"fmt"
-	"pkg0/pkg1"
+	"context"
+	"os"
 )
 
 func main() {
-	fmt.Println(pkg1.X)
+	Greet("test").Render(context.Background(), os.Stdout)
 }
